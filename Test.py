@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Test case for adding two numbers
 import unittest
 from Prog1 import summation
 
