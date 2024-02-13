@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/Aryan9626/dummy-repo-for-pipeline-job-demo.git'
+                git clone 'https://github.com/Aryan9626/dummy-repo-for-pipeline-job-demo.git'
             }
         }
         stage('Build Code') {
