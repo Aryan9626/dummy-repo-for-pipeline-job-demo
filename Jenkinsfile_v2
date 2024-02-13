@@ -4,14 +4,14 @@ pipeline {
   stages {
     stage('Clone Git Repository') {
       steps {
-        echo "**1. Clone Repository:** Downloading code from the Git repository."
+        // echo "**1. Clone Repository:** Downloading code from the Git repository."
         git 'https://github.com/Aryan9626/dummy-repo-for-pipeline-job-demo.git'
       }
     }
 
     stage('Build Code') {
       steps {
-        echo "**2. Build Code:** Making `Prog1.py` executable and running it."
+        // echo "**2. Build Code:** Making `Prog1.py` executable and running it."
         sh 'chmod u+x Prog1.py' // Granting execute permission to Prog1.py
         sh './Prog1.py'         // Running the Python script
       }
@@ -19,7 +19,7 @@ pipeline {
 
     stage('Test Code') {
       steps {
-        echo "**3. Test Code:** Making `Test.py` executable and running it."
+        // echo "**3. Test Code:** Making `Test.py` executable and running it."
         sh 'chmod u+x Test.py'  // Granting execute permission to Test.py
         sh './Test.py'          // Running the Python test script
       }
