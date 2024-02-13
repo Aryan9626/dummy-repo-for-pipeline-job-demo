@@ -20,7 +20,7 @@ class TestSummation(unittest.TestCase):
 
     def test_negative_numbers(self):
         """Tests that the function handles negative numbers correctly."""
-        self.assertEqual(summation([-3, 1, -2]), -5)
+        self.assertEqual(summation([-3, 1, -2]), -4)
 
     def test_large_list(self):
         """Tests that the function works with a large list of numbers."""
